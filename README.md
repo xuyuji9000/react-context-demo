@@ -1,3 +1,3 @@
-# redux demo
+# react context demo
 
-This is a redux demo.
+This is a react context demo.
