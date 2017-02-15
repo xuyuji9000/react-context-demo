@@ -1,22 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from "react-redux";
 
-import store from "./store";
-import Layout from "./components/Layout";
-import ItemList from "./components/ItemList.js";
-import Form from "./components/Form.js";
-
-// Redux 
-const App = function() {
-    return (
-        <Provider store={store}>
-            <Layout></Layout>
-        </Provider>
-    )
-};
+import MessageList from "./components/MessageList";
 
 render(
-    <App></App>,
+    <MessageList messages={[{"text":"this is expression"},{"text":"this is expression"}]}></MessageList>,
     document.getElementById('root')
 );
